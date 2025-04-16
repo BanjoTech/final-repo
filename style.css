@@ -1,0 +1,8 @@
+.red-button{
+    background-color: rgb(98, 0, 255);
+    color: white;
+    border: none;
+}
+.yellow-button{
+    background-color: yellow;
+}

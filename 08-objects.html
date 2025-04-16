@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+
+  <script>
+    /*
+    const product = {
+      name: 'socks',
+      price: 1090
+    };   
+    console.log(product);
+    console.log(product.price);
+
+    product.name = 'cotton socks';
+    console.log(product);
+    */
+    
+    const product2 = {
+      name: 'shirt',
+      ['delivery-time']: '1 day',
+      rating: {
+        stars: 4.5,
+        count: 87
+      },
+      fun: function function1() {
+        console.log('fdunction inside an objects');
+      }
+    }
+    console.log(product2);
+    console.log(product2.name); //another way to write this without the dot notation is below
+    console.log(product2['name']); // this is called the bracket notation way. So when do we use bracket notation but not dot notation? Bracket notation allow us to use properties that don't work with dot notation. E.g check below
+    // console.log(product2.delivery-time); //this won't work bcos javascrript would assume the dash as minus which. So now we use bracket notation and turn it to a string, then it would bring undefined because it wasn't defined at least in the objects. However, i later defined it in the object, you may check.
+    console.log(product2['delivery-time']);
+
+    console.log(product2.rating.stars);
+    product2.fun ();
+  </script>
+</body>
+</html>
