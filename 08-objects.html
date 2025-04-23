@@ -20,6 +20,8 @@
     console.log(product);
     */
     
+    /*
+    
     const product2 = {
       name: 'shirt',
       ['delivery-time']: '1 day',
@@ -28,17 +30,62 @@
         count: 87
       },
       fun: function function1() {
-        console.log('fdunction inside an objects');
+        console.log('function inside an objects');
       }
     }
     console.log(product2);
     console.log(product2.name); //another way to write this without the dot notation is below
     console.log(product2['name']); // this is called the bracket notation way. So when do we use bracket notation but not dot notation? Bracket notation allow us to use properties that don't work with dot notation. E.g check below
     // console.log(product2.delivery-time); //this won't work bcos javascrript would assume the dash as minus which. So now we use bracket notation and turn it to a string, then it would bring undefined because it wasn't defined at least in the objects. However, i later defined it in the object, you may check.
+    
     console.log(product2['delivery-time']);
 
     console.log(product2.rating.stars);
     product2.fun ();
+    
+    console.log(JSON.stringify(product2));
+    
+    */
+    
+    // auto-boxing
+    
+    console.log('hello' .length);
+    console.log('hello' .toUpperCase());
+    
+    const object1 = {
+    message: 'hello',
+    price: 799
+    };
+    const object2 = object1;
+    
+    object1.message = 'Good job!';
+    console.log(object1);
+    console.log(object2);
+    
+    const object3 = {
+      message: 'Good job!',
+      price: 799
+    };
+    console.log(object1 === object3);
+    
+    // const message = object1.message;
+    const { message, price: cost } = object1;
+    console.log(message);
+    console.log(cost);
+    
+    const object4 = {
+      // message: message,
+      message,
+      // method: function function1() {
+      
+      // },
+      // method: function() {
+      
+      // },
+      method() {
+        
+      }
+    };
   </script>
 </body>
 </html>
