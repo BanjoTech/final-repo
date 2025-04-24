@@ -7,12 +7,107 @@
 </head>
 <body>
   <script>
+  /*
     const four = 7;
 
     const goal = {
       ronaldo: four
     }
     console.log(goal);
+    */
+    /* 8C
+    const product = {
+      name: 'basketball',
+      price: 2095,
+      ['delivery-time']: '3 days'
+    };
+    console.log(product);
+    
+    product.price += 500;
+    console.log(product);
+    console.log(product['delivery-time']);
+    */
+    /* 8D
+  function comparePrice(product1, product2) {
+  if (product1.price < product2.price) {
+    return product1;
+  } else {
+    return product2;
+  }
+ }
+
+const product1 = {
+  name: 'basketball',
+  price: 2095
+};
+
+const product2 = {
+  name: 'socks',
+  price: 1090
+};
+console.log(comparePrice(product1, product2));
+*/
+/* 8E the rubbish i did
+function isSameProduct(product1, product2){
+  
+}
+if (product1 === product2){
+  return true;
+} else{
+  return false;
+}
+
+
+const product1 = {
+  name: 'yinka',
+  price: 'priceless'
+}
+
+const product2 = {
+  name: 'yinka',
+  price: 'priceless'
+}
+
+product1 = product2;
+console.log(isSameProduct(product1, product2))
+*/
+
+function isSameProduct(product1, product2) {
+  if (
+    product1.name === product2.name &&
+    product1.price === product2.price
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Here is an alternative solution that uses less code.
+function isSameProduct(product1, product2) {
+  return (
+    product1.name === product2.name &&
+    product1.price === product2.price
+  );
+}
+
+const product1 = {
+  name: 'basketball',
+  price: 2095
+};
+
+const product2 = {
+  name: 'socks',
+  price: 1090
+};
+
+const product3 = {
+  name: 'basketball',
+  price: 2095
+};
+
+console.log(isSameProduct(product1, product2));
+console.log(isSameProduct(product1, product3));
   </script>
 </body>
 </html>
