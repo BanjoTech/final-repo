@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments for no 10</title>
+  <style>
+    .game-style{
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    .is-toggled{
+      background-color: rgb(240, 236, 236);
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- 10C
+   <button class="btn-check">Test</button> 
+   -->
+  <button
+    onclick="gameFunction();"
+  class="js-gaming game-style">Gaming</button>
+
+
+  <script>
+    function gameFunction() {
+      const gameElement = document.querySelector('.js-gaming');
+
+      if (gameElement.classList.contains('is-toggled')) {
+        gameElement.classList.remove('is-toggled');
+      } else{
+        gameElement.classList.add('is-toggled');
+        }
+    }
+  </script>
+</body>
+</html>
