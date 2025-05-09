@@ -41,11 +41,11 @@
 
 /* let randomNumber = 0; this one is best use with while loop cos it's non-standard and not organised
 
-// while (randomNumber < 0.5) {
-//   randomNumber = Math.random();
-// }
+ while (randomNumber < 0.5) {
+   randomNumber = Math.random();
+ }
 
-// console.log(randomNumber);
+  console.log(randomNumber);
 */
 
 const todoList = [
@@ -53,6 +53,12 @@ const todoList = [
   'wash dishes',
   'watch youtube'
 ]
+
+for (let index = 0; index <= todoList.length -1; index++) {
+  const value = todoList[index];
+  console.log(value);
+}
+
   </script>
 </body>
 </html>
