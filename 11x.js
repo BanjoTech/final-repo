@@ -1,21 +1,3 @@
-/* FIRST TYPE OF TODOLIST
-const todoList = [];
-
-function addTodo() {
- const inputElement = document.querySelector('.js-name-input'); //we just put the input html into javascript, to get the text inmputed into the input out we use next step below:
-const name = inputElement.value
-
-todoList.push(name);
-console.log(todoList);
-
-inputElement.value = '';
-}
-*/
-
-
-//SECOND TYPE OF TODOLIST
-
-
 const todoList = 
 [{name:'Make more babies',
  dueDate: '2029-12-22'
@@ -57,7 +39,7 @@ document.querySelector('.js-todo-list').innerHTML = todoListHTML;
 
 
 function addTodo() {
- const inputElement = document.querySelector('.js-name-input'); //we just put the input html into javascript, to get the text inmputed into the input out we use next step below:
+ const inputElement = document.querySelector('.js-name-input'); //we just put the input html into javascript, to get the text inputed into the input out we use next step below:
  const name = inputElement.value
  const dateInputElement = document.querySelector('.js-due-date-input');
  const dueDate = dateInputElement.value;
