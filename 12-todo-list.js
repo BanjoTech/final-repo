@@ -32,16 +32,14 @@ function renderTodoList () {
 
 let todoListHTML = ''; //this is like the container for the acculator pattern just like total
 
-for (let i = 0; i < todoList.length; i++) {
- const todoObject = todoList[i];
-// const name = todoObject.name;
-// const dueDate = todoObject.dueDate;
+
+todoList.forEach(function(todoObject, index) {
  const {name, dueDate} = todoObject;
  const html = `
  <div>${name}</div>
  <div>${dueDate}</div>
  <button onclick="
-  todoList.splice(${i}, 1);
+  todoList.splice(${index}, 1);
   renderTodoList();
   "
   class= "delete-btn"
@@ -49,7 +47,8 @@ for (let i = 0; i < todoList.length; i++) {
  
  `;
  todoListHTML += html;
-}
+});
+
 
 document.querySelector('.js-todo-list').innerHTML = todoListHTML;
 

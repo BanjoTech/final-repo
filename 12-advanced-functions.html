@@ -67,6 +67,9 @@
       'wash dishes',
       'watch youtube'
     ].forEach(function(value, index) {
+      if (value === 'wash dishes') {
+        return;
+      }
       console.log(index);
       console.log(value);
     });
