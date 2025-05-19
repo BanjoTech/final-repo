@@ -32,6 +32,7 @@
       cursor: pointer;
       padding-top: 10px;
       padding-bottom: 10px;
+      border-radius: 5px;
     }
     .delete-btn{
       background-color: darkred;
@@ -41,6 +42,7 @@
       font-size: 15px;
       padding-top: 10px;
       padding-bottom: 10px;
+      border-radius: 5px;
     }
     section{
       padding-left: 5px;
