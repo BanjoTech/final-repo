@@ -14,35 +14,27 @@
 
  
 
-<button class="move-btn" onclick="
-  playGame('Paper');
-  "><img src="/images/paper-emoji.png" alt="" class="move-icon"></button>
+<button class="move-btn js-paper-btn">
+  <img src="/images/paper-emoji.png" alt="" class="move-icon">
+</button>
 
 
 
-<button class="move-btn" onclick="
-   playGame('Scissors');
-
-
-  "><img src="/images/scissors-emoji.png" alt="" class="move-icon"></button>
+<button class="move-btn js-scissors-btn">
+  <img src="/images/scissors-emoji.png" alt="" class="move-icon">
+</button>
 
 <p class="js-moves moves"></p>
 <p class="js-result result"></p>
 <p class="js-score score"></p>
 
 
-<button class="reset-btn" onclick="
-  score.wins = 0;
-  score.losses = 0;
-  score.ties = 0;
-  localStorage.removeItem('score');
-  updateScoreElement();
-">Reset score</button>
+<button class="reset-btn js-reset-btn">Reset score</button>
 
-<button class="auto-btn" onclick="
-  autoPlay();
-">Auto Play</button>
+<button class="auto-btn js-auto-btn">Auto Play
+</button>
 
-<script src="12-rock-papper-scissors.js"></script>
+<script src="12-rock-papper-scissors.js">
+</script>
 </body>
 </html>
