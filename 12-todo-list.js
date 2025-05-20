@@ -33,7 +33,7 @@ function renderTodoList () {
 let todoListHTML = ''; //this is like the container for the acculator pattern just like total
 
 
-todoList.forEach(function(todoObject, index) {
+todoList.forEach((todoObject, index) => {
  const {name, dueDate} = todoObject;
  const html = `
  <div>${name}</div>
