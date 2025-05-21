@@ -38,11 +38,7 @@ todoList.forEach((todoObject, index) => {
  const html = `
  <div>${name}</div>
  <div>${dueDate}</div>
- <button onclick="
-  todoList.splice(${index}, 1);
-  renderTodoList();
-  "
-  class= "delete-btn"
+ <button class= "delete-btn"
  >Delete</button> 
  
  `;
@@ -52,8 +48,18 @@ todoList.forEach((todoObject, index) => {
 
 document.querySelector('.js-todo-list').innerHTML = todoListHTML;
 
+document.querySelectorAll('.delete-btn')
+  .forEach((deleteButton, index) => {
+    deleteButton.addEventListener('click', () => {
+      todoList.splice(index, 1);
+  renderTodoList();
+    });
+  });
 }
 
+document.querySelector('.js-add-todo').addEventListener('click', () =>{
+  addTodo();
+})
 
 function addTodo() {
  const inputElement = document.querySelector('.js-name-input'); //we just put the input html into javascript, to get the text inmputed into the input out we use next step below:
